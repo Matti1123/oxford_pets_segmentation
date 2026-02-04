@@ -6,6 +6,7 @@ from torch.utils.data import Dataset, DataLoader
 from torchvision import transforms
 import matplotlib.pyplot as plt
 
+#initialze class OxfordPetsDataset  
 class OxfordPetsDataset(Dataset):
     def __init__(self, root, transform=None):
         self.img_dir = os.path.join(root, "images")
